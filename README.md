@@ -44,8 +44,6 @@ go version -v -m nginx-ingress
 ```
 
 ```shell
-go version -v -m nginx-ingress
-
 nginx-ingress: go1.24.5
 	path	github.com/nginx/kubernetes-ingress/cmd/nginx-ingress
 	mod	github.com/nginx/kubernetes-ingress	v1.12.1-0.20250718155242-1c47ba285898+dirty
