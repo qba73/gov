@@ -1,0 +1,19 @@
+exec gov dependencies_from_go_version_cmd.txt
+stdout '[{"name":"cel.dev/expr","version":"v0.19.1","digest":"h1:NciYrtDRIR0lNCnH1LFJegdjspNx9fI59O7TWcua/W4="}]'
+
+-- dependencies_from_go_version_cmd.txt --
+nginx-agent: go1.24.5
+	path	command-line-arguments
+	dep	gopkg.in/yaml.v3	v3.0.1	h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
+	build	-buildmode=exe
+	build	-compiler=gc
+	build	-ldflags="-s -w -X main.version=v3.0.0 -X main.commit=67871525 -X main.date=2025-07-18_17-57-40"
+	build	-pgo=/Users/jakubjarosz/projects/nginxinc/agent/default.pgo
+	build	CGO_CFLAGS=
+	build	CGO_CPPFLAGS=
+	build	CGO_CXXFLAGS=
+	build	CGO_ENABLED=1
+	build	CGO_LDFLAGS=
+	build	GOARCH=arm64
+	build	GOARM64=v8.0
+	build	GOOS=darwin

@@ -1,0 +1,7 @@
+stdin dependencies_from_empty_go_version_cmd.txt
+exec gov
+stdout '[[]]'
+
+-- dependencies_from_empty_go_version_cmd.txt --
+nginx-agent: go1.24.5
+	path	command-line-arguments

@@ -1,0 +1,4 @@
+ginx-agent: go1.24.5
+	path	command-line-arguments
+	dep	cel.dev/expr	v0.19.1	h1:NciYrtDRIR0lNCnH1LFJegdjspNx9fI59O7TWcua/W4=
+    build	GOOS=darwin
