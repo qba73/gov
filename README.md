@@ -12,7 +12,7 @@ Go version parser and formatter
 
 `gov` is a Go package and a command-line utility for parsing output from the `go version -v -m <binary>` command.
 
-It parses packages included in the Go binary and outputs the report in JSON format.
+`gov` parses packages included in the Go binary and outputs the report in JSON format.
 The JSON format makes it easier to process dependencies further and embed them in, for example, security reports such as [SLSA](https://slsa.dev/spec/v1.2-rc1/build-provenance) or [in-toto](https://in-toto.io).
 
 Every time you need to retrieve information about the packages in your binary and you require this information in JSON format, you can use the `gov` utility.
