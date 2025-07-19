@@ -1,0 +1,29 @@
+# Based on https://github.com/mvdan/github-actions-golang
+on: [push, pull_request, workflow_dispatch]
+name: CI
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        go-version: ['1.24', '1.23', '1.22']
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/setup-go@v4
+        with:
+          go-version: ${{ matrix.go-version }}
+      - uses: actions/checkout@v3
+      - run: go test ./...
+
+  gocritic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-go@v4
+      - uses: actions/checkout@v3
+      - run: |
+          go install github.com/go-critic/go-critic/cmd/gocritic@latest
+          gocritic check .
