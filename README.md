@@ -9,7 +9,7 @@
 
 
 # gov
-Go version parser and formatter
+Go dependencies parser and formatter
 
 `gov` is a Go package and a command-line utility for parsing output from the `go version -v -m <binary>` command.
 
