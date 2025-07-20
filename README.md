@@ -1,5 +1,6 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/qba73/gov.svg)](https://pkg.go.dev/github.com/qba73/gov)
 [![CI](https://github.com/qba73/gov/actions/workflows/go.yml/badge.svg)](https://github.com/qba73/gov/actions/workflows/go.yml)
+[![CodeQL](https://github.com/qba73/gov/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/qba73/gov/actions/workflows/github-code-scanning/codeql)
 [![Go Report Card](https://goreportcard.com/badge/github.com/qba73/gov)](https://goreportcard.com/report/github.com/qba73/gov)
 [![Scorecard](https://github.com/qba73/gov/actions/workflows/scorecard.yml/badge.svg)](https://github.com/qba73/gov/actions/workflows/scorecard.yml)
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/qba73/gov)
