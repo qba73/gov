@@ -18,7 +18,7 @@ The JSON format makes it easier to process dependencies further and embed them i
 
 Every time you need to retrieve information about the packages in your binary and you require this information in JSON format, you can use the `gov` utility.
 
-## How does it work
+## How it works
 
 Let's say we build a Go binary and check what dependencies it includes. As an example, we will build NGINX [Kubernetes Ingress Controller](https://github.com/nginx/kubernetes-ingress).
 
